@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+.home{
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  max-width: 50%;
+}
