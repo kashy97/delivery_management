@@ -4,6 +4,7 @@ import './App.css';
 import {
   Home, 
   Login,
+  Admin,
 } from './components';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login/>} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/home" element={<Home />} />
         </Routes>
       </BrowserRouter>
