@@ -1,9 +1,22 @@
 .App {
   text-align: center;
 }
-.home{
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  border: 1px solid midnightblue;
   align-items: center;
   justify-content: center;
-  margin-left: 25%;
-  max-width: 50%;
+  margin: 5%;
+  padding: 5%;
+}
+
+.menu{
+  width: 100%;
+}
+
+.tasks{
+  align-items: center;
+  width: 50%;
 }

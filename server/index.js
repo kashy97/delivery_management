@@ -21,7 +21,7 @@ app.get("/api/get", (req, res) => {
     const qt= req.body.qt;
     const amt= req.body.amt;
 
-    const sqlSelect = "SELECT * FROM product_sold";
+    const sqlSelect = "SELECT * FROM product_task";
     db.query(sqlSelect, [item, qt, amt], (err, result) =>{
         res.send(result);
     });
@@ -33,7 +33,7 @@ app.post("/api/insert", (req, res)=>{
     const amt= req.body.amt;
 
 
-    const sqlInsert = "INSERT INTO product_sold (item, qt, amt) VALUES (?,?,?)";
+    const sqlInsert = "INSERT INTO product_task (item, qt, amt) VALUES (?,?,?)";
     db.query(sqlInsert, [item,qt,amt], (err, result)=>{
         console.log(result);
     });
