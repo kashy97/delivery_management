@@ -10,13 +10,13 @@ import {
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login/>} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/home" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login/>} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/home" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
