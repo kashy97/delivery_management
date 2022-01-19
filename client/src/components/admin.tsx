@@ -116,7 +116,7 @@ const Admin = () => {
             </Select>
             </FormControl>
             <br/>
-            <Button onClick={handleSubmit} color="primary" variant="contained">Start</Button>
+            <Button onClick={handleSubmit} color="primary" variant="contained">Enter</Button>
         
         </Box>
     </div>
