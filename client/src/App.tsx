@@ -1,23 +1,26 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 import {
   Home, 
-  Login,
+  ULogin,
+  ALogin,
   Admin,
   Registration,
 } from './components';
-import history from './history';
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter >
+        <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Login/>} />
-            <Route path="/admin" element={<Admin />} />
+            <Route path="/" element={<ULogin/>} />
+            <Route path="/admin" element={<ALogin/>} />
+            <Route 
+              path="/admin/home" 
+              element={<Admin />}
+            />
             <Route path="/home" element={<Home />} />
-            <Route path="/register" element={<Registration />} />
           </Routes>
         </BrowserRouter>
     </div>

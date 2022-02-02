@@ -15,7 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 import Axios from 'axios';
 import history from '../history';
-import Login from './login';
+import Login from './user-login';
 import {
     Alert,
  } from '@mui/material';
@@ -25,7 +25,7 @@ function Copyright(props: any) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://poorvikadairy.in/">
-        Your Website
+        Poorvika Dairy
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -44,7 +44,7 @@ const Registration=() => {
    const handleSubmit =(e:any) => {
     Axios.post('http://localhost:3001/register', {
       username: usernamereg,
-      password:passwordreg,
+      password: passwordreg,
     }).then((response)=> {
       if(response){
        console.log("alert",response)
@@ -103,10 +103,7 @@ const Registration=() => {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
-                // onClick={handleSubmit}
               >
-           {/* <Link href="/home" >
-                    {"Register"} </Link> */}
                     Register
               </Button>
               <Grid container>
