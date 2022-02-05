@@ -3,11 +3,6 @@ import Box from '@mui/material/Box';
 import Axios from 'axios';
 import { 
   Button,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Avatar 
  } from '@material-ui/core';
  import {
   AppBar,
@@ -31,19 +26,19 @@ const Home = () => {
   },[])
 
   console.log("t",task);
-  const handleStart =(e:any) => {
-    Axios.post('http://localhost:3001/api/insert', {
-      // item: item,
-      // amt: amt,
-      // qt: qt,
-    }).then(()=> {
-      alert("successful insert");
-    })
+  // const handleStart =(e:any) => {
+  //   Axios.post('http://localhost:3001/api/insert', {
+  //     // item: item,
+  //     // amt: amt,
+  //     // qt: qt,
+  //   }).then(()=> {
+  //     alert("successful insert");
+  //   })
 
-  };
-  const handleStop=(e:any) => {
-    console.log(new Date().getTime())
-  }
+  // };
+  // const handleStop=(e:any) => {
+  //   console.log(new Date().getTime())
+  // }
   return (
     <div className='container'>
       <div className='menu'>
