@@ -60,7 +60,7 @@ app.post("/api/insert", (req, res) => {
 });
 
 
-//User 
+// !User 
 
 app.post("/user-data", (req, res) => {
   const username = req.body.username;
@@ -155,7 +155,7 @@ app.post("/user-login", (req, res) => {
   });
 });
 
-//Admin
+// !Admin
 
 app.post("/admin-data", (req, res) => {
   const username = req.body.username;
