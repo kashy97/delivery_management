@@ -61,7 +61,7 @@ const Admin = () => {
         </FormControl>
         <br/>
         {
-        item==="A2 Milk" || item=="A2 Ghee" ? 
+        item==="A2 Milk" || item==="A2 Ghee" ? 
         <FormControl fullWidth>  
             <InputLabel id="amt_type">Amount</InputLabel>
             <Select
