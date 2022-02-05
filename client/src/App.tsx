@@ -6,8 +6,13 @@ import {
   ULogin,
   ALogin,
   Admin,
-  Registration,
+  Dashboard,
 } from './components';
+import {
+  Assigned,
+  Progress,
+  Completed,
+} from './pages';
 
 function App() {
   return (
@@ -20,7 +25,11 @@ function App() {
               path="/admin/home" 
               element={<Admin />}
             />
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<Dashboard />} />
+            <Route path="/home/assigned" element={<Assigned />} />
+            <Route path="/home/progress" element={<Progress />} />
+            <Route path="/home/completed" element={<Completed />} />
+
           </Routes>
         </BrowserRouter>
     </div>
