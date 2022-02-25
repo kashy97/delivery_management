@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Axios from 'axios';
 import {
-    Alert,
+    Alert, Typography,
  } from '@mui/material';
 import { 
   Button,
@@ -44,6 +44,7 @@ const Admin = () => {
                 display: 'flex',
                 flexDirection: 'column'}}>
         <Avatar style={{ alignSelf: 'center'}} src="/broken-image.jpg" />
+        <Typography variant="h3">Enter the order details</Typography>
         <FormControl fullWidth>
             <InputLabel id="item_type">Item</InputLabel>
             <Select
