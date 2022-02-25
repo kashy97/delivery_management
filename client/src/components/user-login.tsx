@@ -137,7 +137,7 @@ const ULogin=() => {
                     fullWidth
                     name="password"
                     label="Password"
-                    type="text"
+                    type="password"
                     id="password"
                     value={passwordreg}
                     onChange={(e) => setPasswordreg(e.target.value)}
@@ -200,7 +200,7 @@ const ULogin=() => {
                 fullWidth
                 name="password"
                 label="Password"
-                type="text"
+                type="password"
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

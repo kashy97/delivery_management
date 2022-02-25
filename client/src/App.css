@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-.container{
+.container {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -10,15 +10,15 @@
   margin: 5%;
   padding: 5%;
 }
-.title{
+.title {
   align-items: center;
 }
 
-.menu{
+.menu {
   width: 100%;
 }
 
-.tasks{
+.tasks {
   display: flex;
   flex-flow: row wrap;
   row-gap: 2rem;
@@ -26,6 +26,15 @@
   width: 100%;
 }
 
-.map{
-  height:500px;
+.map {
+  height: 500px;
+}
+
+.search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  z-index: 10;
 }

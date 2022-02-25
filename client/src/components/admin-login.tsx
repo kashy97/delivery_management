@@ -143,7 +143,7 @@ const ALogin=() => {
                     fullWidth
                     name="password"
                     label="Password"
-                    type="text"
+                    type="password"
                     id="password"
                     value={adpasswordreg}
                     onChange={(e) => setAdpasswordreg(e.target.value)}
@@ -206,7 +206,7 @@ const ALogin=() => {
                 fullWidth
                 name="password"
                 label="Password"
-                type="text"
+                type="password"
                 id="password"
                 value={adpassword}
                 onChange={(e) => setAdpassword(e.target.value)}
